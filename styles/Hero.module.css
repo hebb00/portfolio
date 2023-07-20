@@ -1,0 +1,65 @@
+/* fonts */
+@font-face {
+    font-family: 'bubble';
+    font-weight: 100;
+    font-display: swap;
+    src: url(../public/bubble-love.regular.otf) format('woff2');
+  }
+  
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 20px;
+    flex-direction: row;
+    color: #e4e4e4;
+    padding-bottom: 50px;
+
+}
+
+.txt{
+    padding: 30px;
+}
+
+.container img{
+    margin: 20px;
+    /* order: 2; */
+}
+
+
+.button{
+    background-color: #f5a538;
+    color: #220032;
+    padding: 20px 40px;
+    font-size:  20px;
+    text-transform: uppercase;
+}
+.button:hover{
+    background-color:#e77432 ;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.bttn{
+    outline-style: solid!important;
+    outline-color: #f5a538!important;
+    color: #f5a538;
+    padding: 15px 35px;
+    margin: 30px;
+    font-size:  20px;
+    background: none;
+    text-transform: uppercase;
+  
+}
+.bttn:hover{
+    background-color: #f5a538;
+    color: #220032;
+
+}
+.container span{
+    color: #ab74de;
+}
+
+

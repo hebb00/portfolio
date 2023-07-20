@@ -1,10 +1,15 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-
+import Hero from '../../components/Hero'
+import BgParticles from '../../components/BgParticles'
+import MySkills from '../../components/MySkills'
+import About from '../../components/About'
+import MyJourney from '../../components/MyJourney'
+import Form from '../../components/Form'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      {/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
@@ -89,7 +94,15 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
+      <Hero></Hero>
+     
+      <MySkills/> 
+      {/* <BgParticles/> */}
+
+      {/* <About/> */}
+      <MyJourney/>
+      <Form/>
     </main>
   )
 }
