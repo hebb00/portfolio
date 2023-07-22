@@ -20,15 +20,18 @@ export const Navbar = () => {
         {/* <a id='logo' href={NAV_LINKS["ABOUT"]} target="_blank">
             Hebbs
           </a> */}
-          <a href={NAV_LINKS["ABOUT"]} target="_blank">
+          {/* <Link href={NAV_LINKS["ABOUT"]}>
             About Me
-          </a>
-          <a href={NAV_LINKS["SKILLS"]} target="_blank">
+          </Link> */}
+          <Link  href={NAV_LINKS["PROJECTS"]}>
+             Projects
+          </Link>
+          <Link  href={NAV_LINKS["SKILLS"]}>
             My Skills
-          </a>
-          <a href={NAV_LINKS["CONTACT"]} target="_blank">
+          </Link>
+          <Link href={NAV_LINKS["CONTACT"]}>
             Contact ME
-          </a>
+          </Link>
         </div>
 
         <div className={styles.socials}>

@@ -6,9 +6,9 @@
     height: 80px;
     border-bottom: 2px solid #b640ec;
     background-color: #210032;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 9;
   }
   
   .menu {

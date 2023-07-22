@@ -103,15 +103,16 @@ a {
 }
 
 .title{
-  font-family: 'bubble';
+  font-family: 'oswald';
   font-weight: 100;
   font-size: 85px;
   padding:45px 9px; 
   color: #e4e4e4;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .text{
-  font-size:   24px;
+  font-size: 24px;
   color: #e4e4e4;
+  letter-spacing:1px;
 }

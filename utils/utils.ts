@@ -1,8 +1,8 @@
 export const NAV_LINKS = {
-  CONTACT: "/contact",
-  ABOUT: "/about",
-  PROJECTS: "/projects",
-  SKILLS: "/skills",
+  CONTACT: "#contact",
+  ABOUT: "#about",
+  PROJECTS: "#projects",
+  SKILLS: "#skills",
 };
 
 export const SOCIAL_LINKS = {
