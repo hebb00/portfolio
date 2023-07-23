@@ -26,6 +26,7 @@
     "next": "13.4.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-parallax-tilt": "^1.7.154",
     "react-particles": "^2.10.1",
     "react-simple-typewriter": "^5.0.1",
     "react-tsparticles": "^2.10.1",
