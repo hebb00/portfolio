@@ -10,75 +10,106 @@ export const SOCIAL_LINKS = {
   twitter: "https://twitter.com/Hebbs50",
 };
 
-export const skills: [string, string, string][] = [
+export const skills: [string, string, string, number, number][] = [
   [
-    "/tech/css.png",
+    "/tech/css.svg",
     "I am highly skilled in utilizing CSS to create visually captivating web pages and enhance the overall user experience.",
-    "CSS"
+    "CSS",
+    900,
+    3,
   ],
   [
-    "/tech/py.png",
+    "/tech/py.svg",
     "I have advanced proficiency in utilizing Python libraries such as pandas, matplotlib, and numpy.",
-    "PYTHON"
+    "PYTHON",
+    950,
+    4,
   ],
   [
-    "/tech/git.png",
+    "/tech/git.svg",
     "I possess a strong proficiency in Git, adeptly managing code changes, fostering collaboration with team members, and proficiently resolving conflicts.",
-    "GIT"
+    "GIT",
+    980,
+    5,
   ],
   [
-    "/tech/github.png",
+    "/tech/github.svg",
     "I possess advanced skills in utilizing GitHub for streamlined project collaboration, code sharing, and issue tracking. With GitHub, I proficiently create and manage repositories, enabling me to effectively showcase my work to prospective employers.",
-    "GITHUB"
+    "GITHUB",
+    990,
+    8,
   ],
   [
-    "/tech/html.png",
+    "/tech/html.svg",
     "I have a strong command of HTML, which enables me to efficiently organize web pages and generate meaningful content accessible to all users.",
-    "HTML"
+    "HTML",
+    1000,
+    9,
   ],
   [
-    "/tech/java.png",
+    "/tech/java.svg",
     "I possess vast experience in the utilization of Java for object-oriented programming (OOP) and implementation of data structures.",
-    "JAVA"
+    "JAVA",
+    900,
+    3,
   ],
   [
     "/tech/javascript.png",
     "I possess extensive experience in utilizing JavaScript to implement interactivity and functionality within web pages, thereby creating dynamic user interfaces.",
-    "JAVASCRIPT"
+    "JAVASCRIPT",
+    900,
+    4,
   ],
   [
-    "/tech/reactjs.png",
+    "/tech/react.svg",
     "I possess extensive knowledge and expertise in React, demonstrating proficiency in creating reusable components and effectively managing application state using hooks and context.",
-    "REACT"
+    "REACT",
+    900,
+    5,
   ],
   [
     "/tech/vite.svg",
     "I have gained considerable experience working with Vite for approximately six months, leveraging its capabilities to build React websites and seamlessly deploy them on platforms like Netlify.",
-    "VITE"
+    "VITE",
+    800,
+    8,
   ],
   [
-    "/tech/postgresql.png",
+    "/tech/postgresql.svg",
     "I have a strong command of PostgreSQL, encompassing a wide range of skills such as database normalization, triggers, front-end connectivity, and data analysis using software like Power BI.",
-    "POSTGRESQL"
+    "POSTGRESQL",
+    1000,
+    9,
   ],
   [
-    "/tech/node.webp",
+    "/tech/nodejs.svg",
     "I have a preference for utilizing Node.js as my runtime environment when developing web applications. My expertise lies in leveraging Node.js to create robust and scalable web applications.",
-    "NODE"
+    "NODE",
+    1000,
+    10,
   ],
 ];
 
-export const projects: [string, string, string, string][] =[
-  ['dashboard',
-   'something about a transporter project that i worked on for my school project project that i worked on for my school project',
-   "/projects/transport.png",'githublink'],
-   ['dashboard',
-   'something about a transporter project that i worked on for my school project project that i worked on for my school project',
-   "/projects/transport.png",'githublink'],
-   ['dashboard',
-   'something about a transporter project that i worked on for my school project project that i worked on for my school project',
-   "/projects/transport.png",'githublink'],
-]
+export const projects: [string, string, string, string][] = [
+  [
+    "dashboard",
+    "something about a transporter project that i worked on for my school project project that i worked on for my school project",
+    "/projects/transport.png",
+    "githublink",
+  ],
+  [
+    "dashboard",
+    "something about a transporter project that i worked on for my school project project that i worked on for my school project",
+    "/projects/transport.png",
+    "githublink",
+  ],
+  [
+    "dashboard",
+    "something about a transporter project that i worked on for my school project project that i worked on for my school project",
+    "/projects/transport.png",
+    "githublink",
+  ],
+];
 export const heroOptions = {
   autoPlay: true,
 
