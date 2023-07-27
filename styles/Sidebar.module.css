@@ -4,20 +4,21 @@
     justify-content: flex-start;
     align-items: flex-start;
     position: fixed;
-    top: 0px;
-    right: 0px;
+    top: 36px;
+    right: 7px;
     height: 100vh;
     overflow: auto;
     background-color:  #220032;
     width: 40%;
-    padding: 15px;
+    padding: 10px;
     z-index: 2;
   }
   
   .goback {
-    width: 30px;
-    height: 30px;
-    margin: 20px 10px;
+    width: 40px;
+    height: 40px;
+    margin: 35px 3px;
+    color: #fff;
   }
   
   .links {
@@ -31,26 +32,10 @@
     font-size: 16px;
     margin: 20px 10px;
   }
-  
-  .docsButton {
-    color: #000;
-    background-color: transparent;
-    font-size: 16px;
-    margin: 20px 10px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .docsDropDown {
-    display: inline-block;
-  }
-  
-  .dropDownContent a {
-    color: #ac6eea;
-    padding: 5px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
+
+  .links a:hover{
+    scale:1.1 ;
+    color: #9117d3;
   }
   
   .hide {
@@ -68,6 +53,11 @@
     width: 33px;
     height: 30px;
     margin: 0px 5px;
+  }
+
+  .socials a img:hover{
+    scale:1.1 ;
+
   }
   
   @media screen and (min-width: 768px) {

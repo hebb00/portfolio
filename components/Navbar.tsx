@@ -5,6 +5,7 @@ import { Sidebar } from "./Sidebar";
 import { SOCIAL_LINKS, NAV_LINKS } from "../utils/utils";
 import Link from "next/link";
 import IconBars from "../public/Icons/IconBars";
+import Image from "next/image";
 
 
 export const Navbar = () => {
@@ -14,19 +15,17 @@ export const Navbar = () => {
   return (
     <>
       <nav className={styles.navbar}>
-
-
+        <Link href={NAV_LINKS["HOME"]}>
+          <Image className={styles.logo} src="/logo.svg" height={30} width={30} alt="logo" />
+        </Link>
         <div className={styles.links}>
-        {/* <a id='logo' href={NAV_LINKS["ABOUT"]} target="_blank">
-            Hebbs
-          </a> */}
           {/* <Link href={NAV_LINKS["ABOUT"]}>
             About Me
           </Link> */}
-          <Link  href={NAV_LINKS["PROJECTS"]}>
-             Projects
+          <Link href={NAV_LINKS["PROJECTS"]}>
+            Projects
           </Link>
-          <Link  href={NAV_LINKS["SKILLS"]}>
+          <Link href={NAV_LINKS["SKILLS"]}>
             My Skills
           </Link>
           <Link href={NAV_LINKS["CONTACT"]}>
@@ -44,18 +43,14 @@ export const Navbar = () => {
         </div>
 
         {!openMenu && (
-         
-          <a 
-          onClick={() => setOpenMenu((prev) => !prev)}
 
-          >
+          <a onClick={() => setOpenMenu((prev) => !prev)} >
             <IconBars color="#fff"
-              height="400"
-              width="400"
+              height="30"
+              width="30"
               className={styles.menu}
             />
           </a>
-    
         )}
       </nav>
       {openMenu && <Sidebar setMenu={setOpenMenu} menu={openMenu} />}
