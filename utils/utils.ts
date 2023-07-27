@@ -3,6 +3,7 @@ export const NAV_LINKS = {
   ABOUT: "#about",
   PROJECTS: "#projects",
   SKILLS: "#skills",
+  HOME: "/",
 };
 
 export const SOCIAL_LINKS = {
