@@ -89,26 +89,44 @@ export const skills: [string, string, string, number, number][] = [
     10,
   ],
 ];
+export interface Props {
+  title: string;
+  description: string;
+  img: string;
+  gitLink: string;
+  demo:string;
+}
 
-export const projects: [string, string, string, string][] = [
-  [
-    "dashboard",
-    "something about a transporter project that i worked on for my school project project that i worked on for my school project",
-    "/projects/transport.png",
-    "githublink",
-  ],
-  [
-    "dashboard",
-    "something about a transporter project that i worked on for my school project project that i worked on for my school project",
-    "/projects/transport.png",
-    "githublink",
-  ],
-  [
-    "dashboard",
-    "something about a transporter project that i worked on for my school project project that i worked on for my school project",
-    "/projects/transport.png",
-    "githublink",
-  ],
+export const projectsInfo:Props[] = [
+  {
+   title: "Transport dashboard",
+   description: "something about a transporter project that i worked on for my school project project that i worked on for my school project",
+    img:"/projects/transport.png",
+    gitLink:"",
+    demo:"",
+},
+  {
+   title: "Hackathon page",
+   description: "something about a transporter project that i worked on for my school project project that i worked on for my school project",
+   img: "/projects/hack.png",
+   gitLink: "",
+   demo:"",
+},
+  {
+   title: "Sandbox projects page",
+   description: "something about a transporter project that i worked on for my school project project that i worked on for my school project",
+   img: "/projects/sandbox.png",
+   gitLink: "https://github.com/hebb00/hebb00.github.io/tree/main",
+   demo:"https://hebb00.github.io/projects",
+  },
+    {
+     title: "Rounds dashboard",
+      description:"something about a transporter project that i worked on for my school project project that i worked on for my school project",
+     img: "/projects/round.png",
+     gitLink: "",
+     demo:"",
+},
+
 ];
 export const heroOptions = {
   autoPlay: true,
