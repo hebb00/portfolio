@@ -4,6 +4,7 @@ import styles from "../styles/skills.module.css";
 import { motion, Variants } from "framer-motion";
 import Image from 'next/image';
 import { skills } from "../utils/utils";
+import Tilt from "react-parallax-tilt";
 
 interface Props {
     link: string;
@@ -32,13 +33,19 @@ function SkillCard({ link, discription, title ,offscreen, duration}: Props) {
         }
     };
     return (
-        <motion.div
+
+         <motion.div
             className={styles.cardContainer}
-            initial="offscreen"
-            whileInView="onscreen"
+             initial="offscreen"
+         whileInView="onscreen"
             viewport={{ once: true, amount: 0.8 }}
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.1 }}
+         >
+        <Tilt glareEnable={false} tiltMaxAngleX={10}
+        tiltMaxAngleY={10} perspective={1000}
         >
+
+
             <div className={styles.splash} />
             <motion.div className={styles.card} variants={cardVariants}>
                 <div className={styles.cardImg}>
@@ -47,8 +54,9 @@ function SkillCard({ link, discription, title ,offscreen, duration}: Props) {
                 <h3>{title}</h3>
                 <p>{discription}
                 </p>
-            </motion.div>
-        </motion.div>
+            </motion.div>   
+                </Tilt>
+       </motion.div>
     );
 }
 

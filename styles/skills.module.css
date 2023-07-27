@@ -3,7 +3,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    padding: 100px 0px;
+    padding: 80px 0px;
     width: 100%;
     overflow: hidden;
     margin: 30px;
@@ -16,7 +16,7 @@
     font-size: 27px;
     width: 80%;
     font-weight: 600;
-    margin: 50px 0px;
+    margin: 40px 0px;
 
   }
   
@@ -31,57 +31,12 @@
     margin-top: 30px;
   }
   
-  
-  @media screen and (min-width: 900px) {
-    .benefits {
-      width: 80%;
-    }
-  
-    .container h2 {
-      font-size: 40px;
-      width: 70%;
-    }
-  }
-  
-  @media screen and (min-width: 1150px) {
-    .benefits {
-      width: 95%;
-    }
-  
-    .container h2 {
-      font-size: 45px;
-      width: 70%;
-    }
-  }
-  
-  @media screen and (min-width: 1350px) {
-    .benefits {
-      width: 80%;
-    }
-  
-    .container h2 {
-      font-size: 50px;
-      width: 65%;
-    }
-  }
-  
-  @media screen and (min-width: 1400px) {
-    .benefits {
-      width: 70%;
-    }
-  
-    .container h2 {
-      font-size: 53px;
-      width: 50%;
-    }
-  }
-  
   .cardsCon{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 35px 0px;
-    margin-top: 80px;
+    margin-top: 30px;
+    padding-bottom: 30px;
   }
   .card {
     width: 300px;
@@ -105,44 +60,56 @@
     transform-origin: 3% 80%;
   }
   
-  .cardContainer {
-    /* overflow: hidden; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding-top: 30px;
-    margin-bottom: -90px;
-  }
-.cardContainer:hover{
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 30px;
+  margin-bottom: -90px;
+}
+
+.cardContainer:hover, .cardContainer:active{
   z-index: 7;
 }
-  /* .splash {
-    width: 350px;
-    background: #ab74de;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    clip-path: path(
-      "M 0 303.5 C 0 292.454 8.995 285.101 20 283.5 L 460 219.5 C 470.085 218.033 480 228.454 480 239.5 L 500 430 C 500 441.046 491.046 450 480 450 L 20 450 C 8.954 450 0 441.046 0 430 Z"
-    );
-  } */
+
+.skilltitle{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 80px 0px;
+}
+
+.cardImg{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card h3{
+  color: #e4e4e4;
+  font-size: 30px;
+}
 
 
-  .skilltitle{
-    width:  90%;
-    display: flex;
+  /* Mobile */
+  @media (max-width: 700px) {
+    .card{
+      width:250px;
+      height: 340;
+    
+    
+    }
+    .card p {
+        font-size: 18px;
+    }
+    .card h3{
+      font-size: 25px;
+    }
+    .cardsCon{
+      margin-left: 25px;
+    display: flex;  
     justify-content: flex-start;
-    padding: 80px 0px;
-    /* text-align: left; */
-  }
-  .cardImg{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .card h3{
-    color: #e4e4e4;    font-size: 30px;
+    
+    }
   }

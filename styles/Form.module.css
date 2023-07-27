@@ -5,10 +5,11 @@
     flex-wrap: wrap;
     align-content: center;
     padding-top: 80px;
+  
 }
 
 .formCard{
-    margin-top: 80px;
+    margin-top: 30px;
     padding: 90px;
     background: white;
     background: linear-gradient(
@@ -90,3 +91,15 @@
     cursor: pointer;
     color: #fff;
 }
+
+  /* Mobile */
+  @media (max-width: 700px) {
+
+    .formCard{
+        padding: 30px;
+       
+    }
+    .con input{
+        width: 300px;
+    }
+  }

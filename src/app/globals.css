@@ -106,7 +106,7 @@ a {
   font-family: 'oswald';
   font-weight: 100;
   font-size: 85px;
-  padding:45px 9px; 
+  padding:45px  15px; 
   color: #e4e4e4;
   text-transform: uppercase;
 }
@@ -116,3 +116,13 @@ a {
   color: #e4e4e4;
   letter-spacing:1px;
 }
+
+  /* Mobile */
+  @media (max-width: 700px) {
+    .title{
+      font-size: 48px;
+    }
+    .text{
+      font-size: 18px;
+    }
+  }
