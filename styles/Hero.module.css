@@ -3,7 +3,7 @@
     font-family: 'bubble';
     font-weight: 100;
     font-display: swap;
-    src: url(../public/bubble-love.regular.otf) format('woff2');
+    src: url(../public/fonts/bubble-love.regular.otf) format('woff2');
   }
   
 .container{
@@ -14,28 +14,35 @@
     margin: 20px;
     flex-direction: row;
     color: #e4e4e4;
-    padding-bottom: 50px;
+    padding: 30px 0px;
 
 }
 
 .txt{
-    padding: 30px;
+    padding:  20px;
 }
 
-.container img{
-    margin: 20px;
-    /* order: 2; */
-}
-
+.heroTxt{
+    font-family: 'bubble';
+    font-weight: 100;
+    font-size: 85px;
+    padding: 20px 9px; 
+    color: #e4e4e4;
+    text-transform: capitalize;
+  }
 
 .button{
     background-color: #f5a538;
     color: #220032;
-    padding: 20px 40px;
+    padding: 20px 45px;
     font-size:  20px;
     text-transform: uppercase;
+    font-family: 'oswald-reg';
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-top:  20px;
 }
-.button:hover{
+.button:hover .button:active{
     background-color:#e77432 ;
     cursor: pointer;
     color: #fff;
@@ -51,6 +58,9 @@
     font-size:  20px;
     background: none;
     text-transform: uppercase;
+    font-family: 'oswald-reg';
+    font-weight: 100;
+    letter-spacing: 2px;
   
 }
 .bttn:hover{
@@ -59,7 +69,27 @@
 
 }
 .container span{
-    color: #ab74de;
+    color: #b57fe8;
 }
 
 
+
+  /* Mobile */
+  @media (max-width: 700px) {
+    .heroTxt{
+        font-size: 48px;
+     
+    }
+    .txt{
+        order: 2;
+        justify-content: center;
+        text-align: center;
+    }
+    .container img{
+        order: 1;
+        height: 300px;
+        width: 300px;
+        padding: 20px;
+        margin-top: 80px;
+    }
+  }

@@ -23,15 +23,6 @@ export default function Hero() {
             Contact Me
           </motion.button>
         </a>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className={styles.bttn}
-        >
-          <a href="/mycv.pdf" download="cv">
-            View CV
-          </a>
-        </motion.button>
       </motion.div>
       <img
         src="/hebb.svg"
