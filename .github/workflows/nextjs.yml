@@ -73,6 +73,13 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Set Environment Variables
+        env:
+          BASE_PATH: "${{ steps.pages.outputs.base_path }}"
+        run: |
+          touch .env.local
+          echo "NEXT_PUBLIC_BASE_PATH=$BASE_PATH"
+          echo "NEXT_PUBLIC_BASE_PATH=$BASE_PATH" >> .env.local
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Static HTML export with Next.js
