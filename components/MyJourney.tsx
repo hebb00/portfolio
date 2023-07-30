@@ -17,8 +17,8 @@ export default function MyJourney() {
       <div className={styles.conTxt}><h1 className='title'> Projects</h1>
       </div>
       <div className={styles.cardsContainer}>
-        {projectsInfo.map(({ title, description, img, gitLink, demo }: any) => (
-          <ProjectsCard img={img} description={description} title={title} gitLink={gitLink} demo={demo} key={img} />
+        {projectsInfo.map(({ title, description, img, gitLink, demo, tech}: any) => (
+          <ProjectsCard img={img} description={description} title={title} gitLink={gitLink} demo={demo} tech={tech} key={img} />
         ))
         }
       </div>

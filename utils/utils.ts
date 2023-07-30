@@ -96,36 +96,41 @@ export interface Props {
   img: string;
   gitLink: string;
   demo:string;
+  tech:string[];
 }
 
 export const projectsInfo:Props[] = [
   {
-   title: "Transport dashboard",
-   description: "something about a transporter project that i worked on for my school project project that i worked on for my school project",
+    title: "Transport dashboard",
+    description: "Developing an accessible management system for operators, improving the visualization and car booking process, setting up an interactive and flexible calendar that allows visualizing availability and creating car reservations within the available timeframe.",
     img:"/projects/transport.png",
     gitLink:"",
     demo:"",
+    tech:['TYPESCRIPT','REACT','VITE','POSTGRESQL','EXPRESS']
 },
   {
    title: "Hackathon page",
-   description: "something about a transporter project that i worked on for my school project project that i worked on for my school project",
+   description: "Creating and implementing a webpage for the purpose of promoting a hackathon, encompassing the design process including theme development and utilizing AI technology to generate visually appealing images.",
    img: "/projects/hack.png",
    gitLink: "",
    demo:"",
+   tech:['HTML','CSS']
 },
   {
    title: "Sandbox projects page",
-   description: "something about a transporter project that i worked on for my school project project that i worked on for my school project",
+   description: "Miagrate the website from hugo to nextra. Designning and developing a Sandbox projects page along with hackathon page",
    img: "/projects/sandbox.png",
    gitLink: "https://github.com/hebb00/hebb00.github.io/tree/main",
-   demo:"https://hebb00.github.io/projects",
+   demo:"https://opendatacommunity.org/projects",
+   tech:['TYPESCRIPT','REACT','NEXTJS']
   },
     {
      title: "Rounds dashboard",
-      description:"something about a transporter project that i worked on for my school project project that i worked on for my school project",
+     description:"The web application features a comprehensive rounds dashboard that highlights the number of projects per round and their corresponding status. It includes a table that showcases projects along with their respective rounds. Additionally, the web app offers a filtering functionality to facilitate project filtering based on their status.",
      img: "/projects/round.png",
      gitLink: "",
-     demo:"",
+     demo:"https://rounds-dashboard.on.fleek.co/",
+     tech:['TYPESCRIPT','REACT','VITE', 'MUI']
 },
 
 ];
