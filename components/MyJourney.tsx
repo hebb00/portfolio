@@ -11,7 +11,6 @@ import { projectsInfo } from '../utils/utils'
 
 
 export default function MyJourney() {
-  const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <div className={styles.con} id='projects'>

@@ -10,7 +10,6 @@ import Image from "next/image";
 
 export const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [docsDropDown, setDocsDropDown] = useState<any>();
 
   return (
     <>
