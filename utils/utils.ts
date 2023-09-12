@@ -110,7 +110,7 @@ export const projectsInfo:Props[] = [
 },
   {
    title: "Hackathon page",
-   description: "Creating and implementing a webpage for the purpose of promoting a hackathon, encompassing the design process including theme development and utilizing AI technology to generate visually appealing images.",
+   description: "Creating and implementing a hackathon landing page, encompassing the design process including theme development and utilizing AI technology to generate visually appealing images.",
    img: "/projects/hack.png",
    gitLink: "",
    demo:"",
@@ -118,7 +118,7 @@ export const projectsInfo:Props[] = [
 },
   {
    title: "Sandbox projects page",
-   description: "Miagrate the website from hugo to nextra. Designning and developing a Sandbox projects page along with hackathon page",
+   description: "Miagrate the website from hugo to nextra. Designning and implementing a Sandbox projects page along with hackathon page",
    img: "/projects/sandbox.png",
    gitLink: "https://github.com/hebb00/hebb00.github.io/tree/main",
    demo:"https://opendatacommunity.org/projects",
