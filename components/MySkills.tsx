@@ -73,7 +73,7 @@ export default function MySkills() {
             <div className={styles.cardsCon}>
 
                 {skills.map(([link, discription, title, offscreen,duration]) => (
-                    <SkillCard link={link} discription={discription} title={title} key={link} offscreen={offscreen} duration={duration}/>
+                    <SkillCard link={link} discription={discription} title={title} key={title} offscreen={offscreen} duration={duration}/>
                 ))
                 }
             </div>

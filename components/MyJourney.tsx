@@ -18,7 +18,7 @@ export default function MyJourney() {
       </div>
       <div className={styles.cardsContainer}>
         {projectsInfo.map(({ title, description, img, gitLink, demo, tech}: any) => (
-          <ProjectsCard img={img} description={description} title={title} gitLink={gitLink} demo={demo} tech={tech} key={img} />
+          <ProjectsCard img={img} description={description} title={title} gitLink={gitLink} demo={demo} tech={tech} key={title} />
         ))
         }
       </div>

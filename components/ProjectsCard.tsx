@@ -27,7 +27,7 @@ export default function ProjectsCard({ description, title, img, gitLink, demo, t
       <p>{description}</p>
       <div className={styles.pills}>
         {tech.map((item: any) => (
-          <Pill tech={item} />
+          <Pill tech={item} key={item} />
         ))
         }
       </div>
