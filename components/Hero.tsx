@@ -1,14 +1,13 @@
 "use client";
 import styles from "../styles/Hero.module.css";
 import { motion } from "framer-motion";
-import BgParticles from "./BgParticles";
+
 
 
 export default function Hero() {
-
   return (
     <>
-      <BgParticles />
+    
       <motion.div className={styles.container} >
         <motion.div className={styles.txt}>
           <h1 className={styles.heroTxt}>
