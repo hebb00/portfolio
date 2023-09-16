@@ -10,14 +10,14 @@ interface Props {
     link: string;
     discription: string;
     title: string;
-    offscreen:number;
-    duration:number
+    offscreen: number;
+    duration: number
 }
 
 
 
 
-function SkillCard({ link, discription, title ,offscreen, duration}: Props) {
+function SkillCard({ link, discription, title, offscreen, duration }: Props) {
     const cardVariants: Variants = {
         offscreen: {
             x: offscreen
@@ -34,29 +34,29 @@ function SkillCard({ link, discription, title ,offscreen, duration}: Props) {
     };
     return (
 
-         <motion.div
+        <motion.div
             className={styles.cardContainer}
-             initial="offscreen"
-         whileInView="onscreen"
+            initial="offscreen"
+            whileInView="onscreen"
             viewport={{ once: true, amount: 0.8 }}
             whileHover={{ scale: 1.1 }}
-         >
-        <Tilt glareEnable={false} tiltMaxAngleX={10}
-        tiltMaxAngleY={10} perspective={1000}
         >
+            <Tilt glareEnable={false} tiltMaxAngleX={10}
+                tiltMaxAngleY={10} perspective={1000}
+            >
 
 
-            <div className={styles.splash} />
-            <motion.div className={styles.card} variants={cardVariants}>
-                <div className={styles.cardImg}>
-                    <Image src={link} alt="skill" width={90} height={90} />
-                </div>
-                <h3>{title}</h3>
-                <p>{discription}
-                </p>
-            </motion.div>   
-                </Tilt>
-       </motion.div>
+                <div className={styles.splash} />
+                <motion.div className={styles.card} variants={cardVariants}>
+                    <div className={styles.cardImg}>
+                        <Image src={link} alt="skill" width={90} height={90} />
+                    </div>
+                    <h3>{title}</h3>
+                    <p>{discription}
+                    </p>
+                </motion.div>
+            </Tilt>
+        </motion.div>
     );
 }
 
@@ -66,17 +66,17 @@ function SkillCard({ link, discription, title ,offscreen, duration}: Props) {
 export default function MySkills() {
 
     return (
-        <div className={styles.container} id='skills'>
-            <div className={styles.skilltitle}>
-                <h1 className='title'>my skills</h1>
-            </div>
-            <div className={styles.cardsCon}>
+            <div className={styles.container} id='skills'>
+                <div className={styles.skilltitle}>
+                    <h1 className='title'>my skills</h1>
+                </div>
+                <div className={styles.cardsCon}>
 
-                {skills.map(([link, discription, title, offscreen,duration]) => (
-                    <SkillCard link={link} discription={discription} title={title} key={title} offscreen={offscreen} duration={duration}/>
-                ))
-                }
+                    {skills.map(([link, discription, title, offscreen, duration]) => (
+                        <SkillCard link={link} discription={discription} title={title} key={title} offscreen={offscreen} duration={duration} />
+                    ))
+                    }
+                </div>
             </div>
-        </div>
     )
 }
