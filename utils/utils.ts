@@ -211,18 +211,22 @@ fullScreen: {
 
   interactivity: {
     events: {
-      onClick: { enable: true, mode: "push" },
       onHover: {
         enable: true,
-        mode: "repulse",
-        parallax: { enable: false, force: 60, smooth: 10 }
+        mode: "bubble",
+        parallax: { enable: true, force: 30, smooth: 5 }
       },
       resize: true
     },
     modes: {
-      push: { quantity: 18 },
-      repulse: { distance: 160, duration: 0.4 }
-    }
+      bubble: {
+        opacity: 1,
+        size: 3,
+        color: {
+          value: "#fff"
+        }
+      }
+    },
   },
  
 };
