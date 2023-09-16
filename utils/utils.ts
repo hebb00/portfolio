@@ -135,7 +135,18 @@ export const projectsInfo:Props[] = [
 
 ];
 
-export const heroOptions = {
+
+export const options:any = {
+  background: {
+    color: {
+        value: "#210032",
+    },
+},
+fullScreen: {
+  enable: true,
+  zIndex: -1
+},
+// fpsLimit: 120,
   particles: {
     number: {
       value: 100,
@@ -197,44 +208,21 @@ export const heroOptions = {
       }
     }
   },
+
   interactivity: {
-    detect_on: "canvas",
     events: {
-      onhover: {
+      onClick: { enable: true, mode: "push" },
+      onHover: {
         enable: true,
-        mode: "bubble"
-      },
-      onclick: {
-        enable: true,
-        mode: "repulse"
+        mode: "repulse",
+        parallax: { enable: false, force: 60, smooth: 10 }
       },
       resize: true
-      },
-      modes: {
-        grab: {
-          distance: 400,
-          line_linked: {
-            opacity: 1
-          }
-        },
-        bubble: {
-          distance: 150,
-          size: 0,
-          duration: 2,
-          opacity: 0,
-          speed: 3
-        },
-        repulse: {
-          distance: 400,
-          duration: 4
-        },
-        push: {
-          particles_nb: 4
-        },
-        remove: {
-          particles_nb: 2
-        }
-      }
     },
-    retina_detect: true 
+    modes: {
+      push: { quantity: 18 },
+      repulse: { distance: 160, duration: 0.4 }
+    }
+  },
+ 
 };

@@ -28,10 +28,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-parallax-tilt": "^1.7.154",
-    "react-particles": "^2.10.1",
+    "react-particles": "^2.12.2",
     "react-simple-typewriter": "^5.0.1",
-    "react-tsparticles": "^2.10.1",
-    "tsparticles": "^2.10.1",
+    "tsparticles": "^2.12.0",
     "typescript": "5.0.4"
   }
 }
