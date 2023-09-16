@@ -14,7 +14,7 @@ export default function Hero() {
             Hi, I'm <span>Hebbs
             </span> <br />Software Engineer
           </h1>
-          <p className="text">Things I'm good at React, Database, UI/UX
+          <p className="text">I enjoy working with React, Database, UI/UX
           </p>
           <a href="#contact">
             <motion.button
