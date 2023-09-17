@@ -149,10 +149,10 @@ fullScreen: {
 // fpsLimit: 120,
   particles: {
     number: {
-      value: 100,
+      value: 130,
       density: {
         enable: true,
-        value_area: 800
+        value_area: 500
       }
     },
     color: {
@@ -213,8 +213,8 @@ fullScreen: {
     events: {
       onHover: {
         enable: true,
-        mode: "bubble",
-        parallax: { enable: true, force: 30, smooth: 5 }
+        mode: ["bubble"],
+        parallax: { enable: true, force: 30, smooth: 5 },
       },
       resize: true
     },
