@@ -14,7 +14,7 @@
     );
     backdrop-filter: blur(3rem);
     transform-origin: 3% 80%;
-    color: #e4e4e4;
+    color: #e3e1eb;
     margin: 30px;
   }
   
@@ -25,6 +25,7 @@
   .card h3{
     font-size: 30px;
     padding:  0px 10px;
+    color:#e3e1eb;
   }
 
   .imgCon{
