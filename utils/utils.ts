@@ -101,12 +101,20 @@ export interface Props {
 
 export const projectsInfo:Props[] = [
   {
+    title: "Clamor landing page",
+    description: "Implementing a landing page design for Clamor",
+    img:"/projects/clamor.png",
+    gitLink:"https://github.com/Clamor-Comment-Anywhere",
+    demo:"https://clamor-57sx1uyg9-clamor.vercel.app/",
+    tech:['TYPESCRIPT', 'NEXTJS', 'CSS']
+},
+  {
     title: "Transport dashboard",
     description: "Developing an accessible management system for operators, improving the visualization and car booking process, setting up an interactive and flexible calendar that allows visualizing availability and creating car reservations within the available timeframe.",
     img:"/projects/transport.png",
     gitLink:"",
     demo:"",
-    tech:['TYPESCRIPT','REACT','VITE','POSTGRESQL','EXPRESS']
+    tech:['TYPESCRIPT','REACT','VITE','POSTGRESQL','EXPRESS', 'CSS']
 },
   {
    title: "Hackathon page",
@@ -122,7 +130,7 @@ export const projectsInfo:Props[] = [
    img: "/projects/sandbox.png",
    gitLink: "https://github.com/hebb00/hebb00.github.io/tree/main",
    demo:"https://opendatacommunity.org/projects",
-   tech:['TYPESCRIPT','REACT','NEXTJS']
+   tech:['TYPESCRIPT','NEXTJS', 'CSS']
   },
     {
      title: "Rounds dashboard",
