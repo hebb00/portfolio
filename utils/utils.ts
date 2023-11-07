@@ -104,7 +104,7 @@ export const projectsInfo:Props[] = [
     title: "Clamor landing page",
     description: "Implementing a landing page design for Clamor",
     img:"/projects/clamor.png",
-    gitLink:"https://github.com/Clamor-Comment-Anywhere",
+    gitLink:"",
     demo:"https://clamor-57sx1uyg9-clamor.vercel.app/",
     tech:['TYPESCRIPT', 'NEXTJS', 'CSS']
 },
