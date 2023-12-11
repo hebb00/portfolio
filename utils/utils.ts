@@ -102,7 +102,7 @@ export interface Props {
 export const projectsInfo:Props[] = [
   {
     title: "Clamor landing page",
-    description: "Implementing a landing page design for Clamor",
+    description: "Implementing a landing page design for Clamor extention",
     img:"/projects/clamor.png",
     gitLink:"",
     demo:"https://clamor-57sx1uyg9-clamor.vercel.app/",
