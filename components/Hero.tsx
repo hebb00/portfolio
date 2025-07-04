@@ -23,11 +23,11 @@ export default function Hero() {
           </motion.button>
         </a>
       </motion.div>
-      <img
+{/*       <img
         src="/hebb.svg"
         height={560}
         width={460}
-      />
+      /> */}
     </motion.div>
   );
 };
