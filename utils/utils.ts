@@ -160,7 +160,8 @@ fullScreen: {
       value: 130,
       density: {
         enable: true,
-        value_area: 500
+        width: 500,
+        height: 500,
       }
     },
     color: {
@@ -196,19 +197,19 @@ fullScreen: {
         sync: false
       }
     },
-    line_linked: {
+    links: {
       enable: false,
-      distance: 950, 
+      distance: 950,
       color: "#ffffff",
       opacity: 0.3,
-      width: 1
+      width: 1,
     },
     move: {
       enable: true,
       speed: 0.1,
       direction: "none",
       random: true,
-      out_mode: "out",
+      outModes: "out",
       attract: {
         enable: false,
         rotateX: 600,

@@ -9,7 +9,7 @@ export default function Hero() {
     <motion.div className={styles.container} >
       <motion.div className={styles.txt}>
         <h1 className={styles.heroTxt}>
-          Hi, I'm <span>Hebbs
+          Hi, I&apos;m <span>Hebbs
           </span> <br />Software Engineer
         </h1>
         <p className="text">I enjoy working with React, Database and UI/UX
